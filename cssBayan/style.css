@@ -3,3 +3,31 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.accordion-input {
+  display: none;
+}
+
+.label-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-label {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #494949;
+}
+
+.label-icon {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-input:checked ~ .accordion-content {
+  display: block;
+}
