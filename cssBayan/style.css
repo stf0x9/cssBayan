@@ -3,6 +3,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.accordion {
+  
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .accordion-input {
   display: none;
 }
@@ -22,12 +28,17 @@ body {
 .label-icon {
   font-size: 2em;
   font-weight: 700;
+  transition: transform 0.5s;
 }
 
 .accordion-content {
   display: none;
 }
 
-.accordion-input:checked ~ .accordion-content {
+.accordion-input:checked ~ .accordion-content{
   display: block;
+}
+
+.accordion-input:checked ~ .label-wrap .label-icon {
+  transform: rotate(45deg);
 }
